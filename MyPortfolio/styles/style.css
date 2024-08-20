@@ -36,8 +36,10 @@ header{
     color: #d92cf9;
 }
 
-.header-container-bottom{
-    display: none;
+.nav-link-container{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .nav-link-container{
@@ -58,11 +60,11 @@ header{
 }
 
 .section-one{
-    padding-top: 10em;
+    padding: 10em 0;
     background-image: url('../assets/images/welcome-banner.jpg');
     text-align: center;
     color: white;
-    height: 80vh;
+    min-height: 80vh;
     border-image: fill 1 linear-gradient(hsl(240 100% 25% / .4), hsl(230 100% 25% / .4));
 }
 
@@ -85,6 +87,10 @@ header{
     color: white;
     background-color: #d92cf9;
     border: none;
+    border-radius: 2px;
+}
+.resume:hover{
+    opacity: .9;
 }
 
 .section-two-container{
@@ -124,4 +130,3 @@ header{
 .section-three{
     background-color: aliceblue;
 }
-

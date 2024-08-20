@@ -19,12 +19,12 @@
         <div class="header-container header-container-bottom">
             <ul class="nav-link-container">
                 <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Education</a></li>
+                <li class="nav-link"><a href="">Skills</a></li>
+                <li class="nav-link"><a href="">Experience</a></li>
+                <li class="nav-link"><a href="">Profile</a></li>
+                <li class="nav-link"><a href="">Portfolio</a></li>
+                <li class="nav-link"><a href="">Clients</a></li>
+                <li class="nav-link"><a href="">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -69,7 +69,13 @@
         let btn = document.querySelector('.btn');
         let header_bottom = document.querySelector(".header-container-bottom");
         btn.addEventListener('click', ()=>{
-            header_bottom.classList.toggle("header-container-bottom")
+            // header_bottom.classList.toggle("header-container-bottom")
+            let content = document.querySelector('.nav-link-container');
+            if(content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else{
+                content.style.maxHeight = content.scrollHeight-20 + "px";
+            }
         })
     </script>
 </body>
