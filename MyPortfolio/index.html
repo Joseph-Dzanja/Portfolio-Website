@@ -2,81 +2,357 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/e61701796c.js" crossorigin="anonymous"></script>
+    <title>Joseph's Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="header-container header-container-top">
-            <h1>Joseph</h1>
-            <button class="btn"><span class="fa-solid fa-bars"></span></button>
-        </div>
-        <div class="header-container header-container-bottom">
-            <ul class="nav-link-container">
-                <li class="nav-link"><a href="">Education</a></li>
-                <li class="nav-link"><a href="">Skills</a></li>
-                <li class="nav-link"><a href="">Experience</a></li>
-                <li class="nav-link"><a href="">Profile</a></li>
-                <li class="nav-link"><a href="">Portfolio</a></li>
-                <li class="nav-link"><a href="">Clients</a></li>
-                <li class="nav-link"><a href="">Contact</a></li>
-            </ul>
+        <div class="header">
+            <div class="header-container header-logo-container">
+                <div>
+                    <h1>JOSEPH</h1>
+                </div>
+                <div>
+                    <button class="header-menu-btn header-menu-drop" aria-label="toggle navigation menu"></button>
+                </div>
+            </div>
+            <div class="header-container header-nav-container">
+                <nav class="nav-container">
+                    <ul class="nav-links-container">
+                        <li class="nav-link"><a href="#education">EDUCATION</a></li>
+                        <li class="nav-link"><a href="#skills">SKILLS</a></li>
+                        <li class="nav-link"><a href="#experience">EXPERIENCE</a></li>
+                        <li class="nav-link"><a href="#profiles">PROFILES</a></li>
+                        <li class="nav-link"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav-link"><a href="#clients">CLIENTS</a></li>
+                        <li class="nav-link"><a href="#contacts">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section class="section-one">
-        <div class="section-one-content overlay">
-            <h1 class="section-one-h1">HI <span style="color: #d92cf9;">,</span> I AM <br> JOSEPH <br> DZANJA <span style="color: #d92cf9;">.</span></h1>
-            <p class="section-one-p">WEB DESIGNER AND WEB DEVELOPER</p>
-            <button class="resume">Download Resume</button>
+    <section class="introductory-section">
+        <div class="intro-container">
+            <div class="intro-content">
+                <h1>HI <span>,</span> I AM <br> JOSEPH <br> DZANJA <span>.</span></h1>
+                <p>WEB DESIGNER AND WEB DEVELOPER</p>
+                <button>Download Resume</button>
+            </div>
         </div>
     </section>
-
-    <section class="section-two">
-        <h1 class="section-two-h1">ABOUT ME</h1>
-        <div class="section-two-container">
-            <p class="section-two-p1">I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
-            <p class="section-two-p2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+    <section class="about-section">
+        <div class="about-content">
+            <h1>ABOUT ME</h1>
             <hr>
-            <div class="section-two-info">
-                <h3>Phone</h3>
-                <p>+265 999-34-21-66</p>
-            </div>
-            <div class="section-two-info">
-                <h3>Email</h3>
-                <p>jhdzanja@gmail.com</p>
-            </div>
-            <div class="section-two-info">
-                <h3>Website</h3>
-                <p>jhdzanja.com</p>
-            </div>
-            <div class="section-two-info section-two-img">
-                <img src="./assets/images/profile_image.jpg" alt="photo">
+            <div class="about-container">
+                <div>
+                    <p class="about-paragraph">I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+                    <p class="about-additional-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+                    <hr class="about-hr">
+                    <div class="about-contact-details">
+                        <div>
+                            <h1>Phone</h1>
+                            <p>+265 999-34-21-66 <br> +265 887-36-55-79</p>
+                        </div>
+                        <div>
+                            <h1>Email</h1>
+                            <p>jhdzanja@gmail.com</p>
+                        </div>
+                        <div>
+                            <h1>Website</h1>
+                            <p>jhdzanja.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="profile_image.jpg" alt="my-photo">
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="section-three">
-        <h1 class="section-three-h1">Education</h1>
+    <section id="education" class="education-section">
+        <h1>EDUCATION</h1>
+        <hr class="education-hr">
+        <div class="education-container">
+            <div class="education-content">
+                
+                <h2 class="education-university-duration">2019-2024</h2>
+                <p class="education-university-program">Bachelor of Computer Systems and Security</p>
+                <div></div>
+                <h3 class="education-university">Malawi University of Science and Technology</h3>
+                <p class="education-university-location">Thyolo, Malawi</p>
+                <p class="education-university-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, velit voluptatem recusandae ab rerum neque quaerat architecto consectetur delectus deleniti totam molestias doloribus et quo esse nostrum dolore magni corporis.</p>
+            </div>
+        </div>
     </section>
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <h1>SKILLS</h1>
+            <hr>
+            <div class="skillSets">
+                <div class="skill-set-one">
+                    <div class="skill">
+                        <h2>HTML 5</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">80%</h2>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>CSS 3</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">70%</h2>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>JAVASCRIPT</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">90%</h2>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>REACT</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">50%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-set-two">
+                    <div class="skill">
+                        <h2>FIGMA</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">60%</h2>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>COMMUNICATION</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">80%</h2>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>CREATIVITY</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">95%</h2>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2>MySQL</h2>
+                        <div class="skill-container">
+                            <div class="skills-progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                            <h2 class="skill-percentage">75%</h2>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="experience-section">
+        <hr>
+        <h1>EXPERIENCE</h1>
+        <hr>
+        <div class="experience-container">
 
-    
-    <script>
-        let btn = document.querySelector('.btn');
-        let header_bottom = document.querySelector(".header-container-bottom");
-        btn.addEventListener('click', ()=>{
-            // header_bottom.classList.toggle("header-container-bottom")
-            let content = document.querySelector('.nav-link-container');
-            if(content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else{
-                content.style.maxHeight = content.scrollHeight-20 + "px";
-            }
-        })
-    </script>
+        </div>
+    </section>
+    <section id="profiles" class="profile-section">
+        <hr>
+        <h1>PROFILES</h1>
+        <hr>
+        <div class="profile-container">
+            <div class="profiles">
+                <div class="one">
+                    <div class="linked">
+                        <a href="">linkedIn</a>
+                        <div class="linked-overlay">
+                            <a href="">linkedIn</a>
+                        </div>
+                    </div>
+                    <div class="linked">
+                        <a href="">Github</a>
+                        <div class="linked-overlay">
+                            <a href="">Github</a>
+                        </div>
+                    </div>
+                    <div class="linked">
+                        <a href="">LeetCode</a>
+                        <div class="linked-overlay">
+                            <a href="">LeetCode</a>
+                        </div>
+                    </div>
+                    <div class="linked four">
+                        <a href="">Frontend Mentor</a>
+                        <div class="linked-overlay">
+                            <a href="">Frontend Mentor</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="linked">
+                        <a href="">FaceBook</a>
+                        <div class="linked-overlay">
+                            <a href="">FaceBook</a>
+                        </div>
+                    </div>
+                    <div class="linked">
+                        <a href="">Youtube</a>
+                        <div class="linked-overlay">
+                            <a href="">Youtube</a>
+                        </div>
+                    </div>
+                    <div class="linked">
+                        <a href="">Pinterest</a>
+                        <div class="linked-overlay">
+                            <a href="">Pinterest</a>
+                        </div>
+                    </div>
+                    <div class="linked five">
+                        <a href="">Instagram</a>
+                        <div class="linked-overlay">
+                            <a href="">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio-section">
+        <hr>
+        <h1>PORTFOLIO</h1>
+        <hr>
+        <div class="portfolio-container">
+            <div class="portfolio-project-container">
+                <div class="portfolio-column-one">
+                    <div class="portfolio-img-container">
+                        <img src="p1.jpg" alt="project 1">
+                        <div class="portfolio-linked-overlay">
+                            <a href="#">WEB DESIGN</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-img-container">
+                        <img src="p2.jpg" alt="project 2">
+                        <div class="portfolio-linked-overlay">
+                            <a href="#">WEB DESIGN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-img-container portfolio-column-two">
+                    <img src="p3.jpg" alt="project 3">
+                    <div class="portfolio-linked-overlay">
+                        <a href="#">WEB DEVELOPMENT</a>
+                    </div>
+                </div>
+                <div class="portfolio-column-three">
+                    <div class="portfolio-img-container">
+                        <img src="p4.jpg" alt="project 4">
+                        <div class="portfolio-linked-overlay">
+                            <a href="#">WEB DEVELOPMENT</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-img-container">
+                       <img src="p5.jpg" alt="project 5">
+                       <div class="portfolio-linked-overlay">
+                        <a href="#">WEB DEVELOPMENT</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients" class="clients-section">
+        <hr>
+        <h1>CLIENTS</h1>
+        <hr>
+        <div class="slideshow-container">
+            <div class="slideshow">
+              <div class="slide">
+                <ul class="image-list">
+                  <li><img src="./logos/3m.svg" alt="Black and white pattern" /></li>
+                  <li><img src="./logos/barstool-store.svg" alt="Light gray pattern" /></li>
+                  <li><img src="./logos/budweiser.svg" alt="Black and white pattern" /></li>
+                  <li><img src="./logos/buzzfeed.svg" alt="Light gray pattern" /></li>
+                  <li><img src="./logos/forbes.svg" alt="Light gray pattern" /></li>
+                </ul>
+              </div>
+              <div class="slide">
+                <ul class="image-list">
+                    <li><img src="./logos/3m.svg" alt="Black and white pattern" /></li>
+                    <li><img src="./logos/barstool-store.svg" alt="Light gray pattern" /></li>
+                    <li><img src="./logos/budweiser.svg" alt="Black and white pattern" /></li>
+                    <li><img src="./logos/buzzfeed.svg" alt="Light gray pattern" /></li>
+                    <li><img src="./logos/forbes.svg" alt="Light gray pattern" /></li>                
+                  </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="contacts" class="contact-me-section">
+        <h1>CONTACT ME</h1>
+        <hr>
+        <div class="contactMe-container">
+            <div class="contactMe-content">
+                <form id="contact-form" class="contact-form" action="">
+                    <div class="nameEmail">
+                        <input type="text" id="name" class="contactMe-name" placeholder="Name*">
+                        <input type="email" id="email" class="contactMe-email" placeholder="Email*">
+                    </div>
+                    <input type="text" id="subject" class="contactMe-subject" placeholder="Subject">
+                    <textarea name="message" id="message" cols="30" rows="8" class="contactMe-message" placeholder="Message"></textarea>
+                    <button type="submit" class="contactMe-submit">Submit</button>
+                </form>
+                <div class="personal-contact-details-two">
+                    <h1>Joseph Dzanja</h1>
+                    <p>Web Designer and Developer</p>
+                    <div class="about-contact-details-two">
+                        <div>
+                            <h1>Phone</h1>
+                            <p>+265 999-34-21-66 <br> +265 887-36-55-79</p>
+                        </div>
+                        <div>
+                            <h1>Email</h1>
+                            <p>jhdzanja@gmail.com</p>
+                        </div>
+                        <div>
+                            <h1>Website</h1>
+                            <p>jhdzanja.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© Copyright Joseph H Dzanja</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
