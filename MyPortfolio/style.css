@@ -91,7 +91,7 @@ header {
 /*INTRODUCTORY SECTION*/
 
 .introductory-section {
-  background-image: url("welcome-banner.jpg");
+  background-image: url("./flat-lay-workstation-with-copy-space-laptop.jpg");
   min-height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,7 +175,7 @@ header {
 .education-section {
   
   padding: 3rem 0;
-  background-color: #f9fbfd;
+  background-color: #f9fafb;
 }
 .education-content {
   text-align: left;
@@ -429,7 +429,7 @@ header {
   bottom: 0.25rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .experience-tree {
     grid-template-columns: 1fr var(--line-w) 1fr;
   }
@@ -688,21 +688,43 @@ li img{
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 /* Card Styling */
 .card {
   padding: 0.5rem 1rem;
-  background-color: #f9fafb;
+  background-color: #E5E4E2;
   margin: 1.5rem 0.5rem;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  width: 10rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  width: 12rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: float 2.5s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.04) !important;  /* Scaling the card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Visible state when card enters the viewport */
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Medium screen adjustments */
@@ -711,16 +733,17 @@ li img{
     margin: 1rem;
     width: 12rem;
   }
+  .tools-container{
+    justify-content: space-between;
+  }
 }
 
-.card:hover {
-  transform: scale(1.25);
-}
-
+/* Card Image Styling */
 .card img {
   width: 3rem;
 }
 
+/* Card Heading Styling */
 .card h4 {
   font-size: 1rem;
   margin-left: 1rem;
