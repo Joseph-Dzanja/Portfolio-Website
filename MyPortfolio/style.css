@@ -201,15 +201,19 @@ header {
 }
 .education-university-program {
   margin: 1em 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: gray;
 }
 .education-university-description {
   margin: 1em 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  color: #a9a9a9;
+  color: white;
+  background-color: #5072A7;
+  padding: 1em;
+  border-radius: 12px;
+  animation: float 2.5s ease-in-out infinite;
 }
 .education-university-location {
   margin: 1em 0;
